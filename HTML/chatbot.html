@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chatbot-widget" id="chatbot-widget"> <!--widget flutuante do chatbot-->
+        <button
+        class="chatbot-toggle" 
+        id="chatbot-toggle"
+        aria-label="abrir chat com jorge">
+        </button>      <!--botão para abrir o chatbot-->
+        <div class="chatbot-window" id="chatbot-window"> <!--janela do chatbot-->
+            <header class="chatbot-header"> <!--cabeçalho do chatbot-->
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">J</div>
+                    <div>
+                        <div class="chatbot-title">Jorge</div>
+                        <div class="chatbot-subtitle">Jorjão</div>
+                     </div>
+                </div>
+                <button class="chatbot-close" id="chatbot-close" aria-label="fechar chat com jorge">
+                    
+                </button>
+            </header> <!--botão para fechar o chatbot-->
+            <div class="chatbot messages" id="chatbot-messages"> <!--área de mensagens do chatbot-->
+            </div>
+            <form class="chatbot-form" id="chatbot-input-area"> <!--área de input do chatbot-->
+                <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Digite sua mensagem..."> <!--campo de input para digitar a mensagem-->
+                <button type="submit" class="chatbot-send" id="chatbot-send" aria-label="enviar mensagem para jorge">
+                    
+                </button> <!--botão para enviar a mensagem-->
+                <form class="chatbot-form" id="chatbot-form">
+                    <input type="text"
+                        class="chatbot-input"
+                        id="chatbot-input"
+                        placeholder="Digite sua mensagem..."
+                        autocomplete="on"
+                        required>
+                    <button type="submit" class="chatbot-send-btn">😁</button>
+                </form>
+            </form>
+        </div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
